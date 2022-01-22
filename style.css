@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #6df1d5b9;
+    flex-direction: column;
+}
+
+.header {
+    /* height:400px; */
+    width: 350px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    background: white;
+    font-size: 1.8rem;
+    box-shadow: 0px 6px 15px rgba(12, 10, 10, 0.15);
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    font-family: "Poppins";
+    justify-content: center;
+    color: #ad2871;
+    margin-bottom: 10px;
+}
+
+.addBtn {
+    height: 40px;
+    font-size: 0.5em;
+    color: #ad2871;
+    border: 1px solid;
+    border-radius: 20px;
+    margin: 0px 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    background: none;
+}
+
+.addBtn:hover {
+    color: #fff;
+    background: #ad2871;
+}
+
+#itemTitle {
+    width: 70%;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background: none;
+    border: 1px solid;
+    color: #ad2871;
+    font-size: 0.5em;
+    height: 40px;
+}
+
+#itemTitle:focus {
+    outline: none;
+}
+
+ul {
+    padding-top: 10px;
+}
+
+ul>li {
+    color: #00b68eb9;
+    list-style: none;
+    margin: 0.2em 1em;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+li:hover {
+    background-color: #6df1d5b9;
+    color: rgb(44, 41, 41);
+}
+
+.fas {
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .header {
+        width: 300px;
+        padding: 15px 20px;
+        font-size: 1.5rem;
+    }
+    .addBtn {
+        height: 35px;
+        padding: 2px 20px;
+        margin: 0px 5px;
+        font-size: 0.7em;
+    }
+    #itemTitle {
+        width: 60%;
+        height: 35px;
+        padding: 2px 20px;
+        /* margin: 0 15px; */
+        font-size: 0.7em;
+    }
+    ul>li {
+        font-size: 0.7em;
+    }
+}
+
+img {
+    border: 3px outset #191d3a;
+    border-radius: 20px;
+    float: right;
+    margin: -107px 0px 38px 0px;
+    padding: 0px;
+    height: 183px;
+    margin-bottom: 6%;
+}
